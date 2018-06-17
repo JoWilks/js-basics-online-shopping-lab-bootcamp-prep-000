@@ -17,12 +17,13 @@ function addToCart(item) {
 }
 
 function viewCart() {
+  //if shopping cart empty return "You shopping cart is empty."
   if (cart.length ===0) {   
-    return "Your shopping cart is empty";     //if shopping cart empty return "You shopping cart is empty."
+    return "Your shopping cart is empty";     
   }
-  else {
-  for (let i = 0; i<cart.length) {
-    return "blah"
+  else { 
+    for (let i = 0; i<cart.length; i++) {
+    
   }
   }
 }
