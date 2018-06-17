@@ -22,8 +22,8 @@ function viewCart() {
     return "Your shopping cart is empty.";     
   }
   else if (cart.length === 1) {
-  var item = cart[cart.length].itemName;
-  var lastprice = cart[cart.length].itemPame;
+  var item = cart[0].itemName;
+  var lastprice = cart[0].itemPame;
   var allItemsMsg = allItems.join(', ') //combine all items in allItems array into 1 string.
   return `In your cart, you have ${allItems}, and ${lastitem} at ${lastprice}.` //return message about what is in cart.
   }
@@ -36,7 +36,7 @@ function viewCart() {
     allItems.push(`${Name} at $${Price}`); //push ith item name & price onto end of new array called allItems
   }
   var lastitem = cart[cart.length].itemName;
-  var lastprice = cart[cart.length].itemPame;
+  var lastprice = cart[cart.length].itemPrice;
   var allItemsMsg = allItems.join(', ') //combine all items in allItems array into 1 string.
   return `In your cart, you have ${allItems}, and ${lastitem} at ${lastprice}.` //return message about what is in cart.
   }
