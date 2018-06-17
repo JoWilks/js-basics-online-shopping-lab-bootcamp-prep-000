@@ -64,7 +64,7 @@ function grabItem(item) {
   return item;
 }
 
-function removeFromCart(item) {
+function removeFromCart() {
   //find the index of the item
   var cart = getCart();
   var testIndex = cart.findIndex(grabItem);
