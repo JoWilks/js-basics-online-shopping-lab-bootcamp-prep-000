@@ -48,7 +48,7 @@ function viewCart() {
 
 function total() {
  //adds up price of all items in the cart
- var cart= getcart();
+ var cart= getCart();
  var allPrices = [];
  var sum = 0;
 //iterate through cart to get all prices from object into array
