@@ -84,5 +84,6 @@ else {
   var total = total();
   `Your total cost is ${total}, which will be charged to the card ${cardNumber}.` 
   //empty the cart
+  
 }
 }
