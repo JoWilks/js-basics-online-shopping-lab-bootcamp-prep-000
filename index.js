@@ -30,7 +30,7 @@ function viewCart() {
     allItems.push(`${itemName} at $${itemPrice}`); //push ith item name & price onto end of new array called allItems
   }
   allItemsMsg = allItems.join(', ') //combine all items in allItems array into 1 string.
-  return `In your cart, you have  ${allItems}.` //return message about what is in cart.
+  return `In your cart, you have ${allItems}.` //return message about what is in cart.
   }
 }
 
