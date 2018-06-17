@@ -23,6 +23,7 @@ function viewCart() {
   }
   //if shopping cart has 1 item.
   else if (cart.length === 1) {
+  var cart = getCart();
   var oneItem = cart[0].itemName;
   var onePrice = cart[0].itemPrice;
   return `In your cart, you have ${oneItem} at ${onePrice}.` //return message about what is in cart.
