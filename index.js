@@ -23,7 +23,7 @@ function viewCart() {
   }
   else {  //return list of items in cart
     var allItems = [];  //define allItems array to but in item and price details from cart
-    var cart = getcart(); 
+    var cart = getCart(); 
     for (let i = 0; i<cart.length; i++) {  //iterate through all cart array
     itemName = cart[i].itemName;     //pull & save ith items name from cart
     itemPrice = cart[i].itemPrice;    //pull & save ith items price from cart
