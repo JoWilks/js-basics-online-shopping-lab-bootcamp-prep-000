@@ -21,10 +21,15 @@ function viewCart() {
   if (getCart().length === 0) {   
     return "Your shopping cart is empty";     
   }
-  else { 
-    for (let i = 0; i<cart.length; i++) {
-    
+  else {  //return list of items in cart
+    var allItems = [];  //define allItems array to but in item and price details from cart
+    for (let i = 0; i<cart.length; i++) {  //iterate through all cart array
+    itemName = 0;     //pull & save ith items name from cart
+    itemPrice = 0;    //pull & save ith items price from cart
+    allItems.push(`${itemName} at $${itemPrice}`) //push ith item name & price onto end of new array called allItems
   }
+  allItemsMsg = allItems.join(', ') //combine all items in allItems array into 1 string.
+  return `In your cart, you have  ${allItems}.` //return message about what is in cart.
   }
 }
 
