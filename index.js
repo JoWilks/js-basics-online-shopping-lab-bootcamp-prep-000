@@ -62,14 +62,9 @@ function total() {
 
 
 function removeFromCart(item) {
-  //create array of items
-  
-  //find index of item inputted by user
-  
-  //remove object from original array with objects cart
   //find the index of the item
   var cart = getCart();
-  var testIndex = cart.findIndex(x => x.== 'cheese');
+  var testIndex = cart.findIndex(x => x.itemName== "cheese");
   return testIndex
   // removes the specified item from the cart
 }
