@@ -35,7 +35,7 @@ function viewCart() {
     var obj = cart[i];
     var Name = obj["itemName"];     //pull & save ith items name from cart
     var Price = obj["itemPrice"];     //pull & save ith items price from cart
-    allItems.push(`${Name} at $${Price}`); //push ith item name & price onto end of new array called allItems
+    allItems.push(` ${Name} at $${Price}`); //push ith item name & price onto end of new array called allItems
   }
   var lastno = cart.length - 1
   var objlast = cart[lastno];
