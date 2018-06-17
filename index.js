@@ -49,16 +49,13 @@ function viewCart() {
 function total() {
  //adds up price of all items in the cart
  var cart= getcart();
-//iterate through cart to get all prices
-f (cart.length ===0 ) {
-  price = 0;  
-  return price;
-}
-else {
+ var allPrices = [];
+//iterate through cart to get all prices from object into array
   for(i=0;i<cart.length;i++) {
-   var objprice  
+   var ithObject = cart[i];
+   var objPrice = ithObject["itemPrice"];
+   allPrices.push(objPrice);
   }
-}
  
 }
 
