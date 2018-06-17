@@ -11,9 +11,10 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
- var itemname= item;
- 
- cart.push([{itemname,itemprice])
+ var Price = //rand gen no between 1-100
+ var itemObject = {itemName: item, itemPrice: Price};
+ cart.push(itemObject);
+ return cart
 }
 
 function viewCart() {
