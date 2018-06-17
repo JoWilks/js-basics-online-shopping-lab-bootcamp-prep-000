@@ -20,7 +20,8 @@ function viewCart() {
   if (cart.length ===0) {   
     return "Your shopping cart is empty";     //if shopping cart empty return "You shopping cart is empty."
   }
-  else 
+  else {
+  for (let i = 0; i<cart)
 }
 
 function total() {
