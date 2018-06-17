@@ -29,7 +29,7 @@ function viewCart() {
     var Price = cart[i].itemPrice;    //pull & save ith items price from cart
     allItems.push(`${Name} at $${Price}`); //push ith item name & price onto end of new array called allItems
   }
-  allItemsMsg = allItems.join(', ') //combine all items in allItems array into 1 string.
+  var allItemsMsg = allItems.join(', ') //combine all items in allItems array into 1 string.
   return `In your cart, you have ${allItems}.` //return message about what is in cart.
   }
 }
