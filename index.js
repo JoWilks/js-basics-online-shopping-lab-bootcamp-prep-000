@@ -63,8 +63,13 @@ function total() {
 
 function removeFromCart(item) {
   //find the index of the item
-  var cart = getCart();
+    var cart = getCart();
   var removeIndex = cart.findIndex(x => x.itemName== item);
+  //check if item exists in cart
+  if (removeIndex = -1) {
+    return "That item is not in your cart."
+  }
+  else
   // removes the specified item from the cart
   cart.splice(removeIndex, 1);
 }
