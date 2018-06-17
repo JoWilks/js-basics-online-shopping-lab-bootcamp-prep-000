@@ -67,6 +67,7 @@ function removeFromCart(item) {
   var testIndex = cart.findIndex(x => x.itemName== item);
   return testIndex;
   // removes the specified item from the cart
+  
 }
 
 function placeOrder(cardNumber) {
