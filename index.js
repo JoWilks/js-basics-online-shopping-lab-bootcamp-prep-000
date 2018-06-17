@@ -63,7 +63,7 @@ function total() {
 function removeFromCart(item) {
   
   function itemFunc(blah) {
-    return item;
+    return blah;
   }
   //find the index of the item
   var cart = getCart();
