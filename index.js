@@ -47,7 +47,14 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+ //adds up price of all items in the cart
+ var cart= getcart();
+//iterate through cart to get all prices
+if (cart.length ===0 ) {
+  
+}
+ 
+ 
 }
 
 function removeFromCart(item) {
