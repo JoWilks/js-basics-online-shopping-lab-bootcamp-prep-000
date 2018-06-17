@@ -52,7 +52,7 @@ function total() {
  var allPrices = [];
  var sum = 0;
 //iterate through cart to get all prices from object into array
-  for(i=0;i<cart.length;i++) {  
+  for(let i=0;i<cart.length;i++) {  
    var ithObject = cart[i];       //get the ith object in the cart
    var objPrice = ithObject["itemPrice"];       //get the item price property from the ith object
    sum += objPrice;     //add the itemPrice from the ith object to sum
