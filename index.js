@@ -60,14 +60,14 @@ function total() {
   return sum;
 }
 
+function grabItem(item) {
+  return item;
+}
+
 function removeFromCart(item) {
-  
-  function itemFunc() {
-    return item;
-  }
   //find the index of the item
   var cart = getCart();
-  var testIndex = cart.findIndex(itemFunc);
+  var testIndex = cart.findIndex(grabItem);
   return testIndex;
   
   // removes the specified item from the cart
