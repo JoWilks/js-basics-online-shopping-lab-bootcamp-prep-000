@@ -88,4 +88,6 @@ else {
 }
 }
 
-
+function testnest(cardNumber) {
+  var sum = total()
+}
