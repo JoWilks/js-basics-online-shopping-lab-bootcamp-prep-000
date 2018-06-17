@@ -38,8 +38,8 @@ function viewCart() {
     allItems.push(`${Name} at $${Price}`); //push ith item name & price onto end of new array called allItems
   }
   var objlast = cart[cart.length];
-  var lastitem = obj["itemName"];
-  var lastprice = obj["itemPrice"];
+  var lastitem = objlast["itemName"];
+  var lastprice = objlast["itemPrice"];
   var allItemsMsg = allItems.join(', ') //combine all items in allItems array into 1 string.
   return `In your cart, you have ${allItems}, and ${lastitem} at ${lastprice}.` //return message about what is in cart.
   }
