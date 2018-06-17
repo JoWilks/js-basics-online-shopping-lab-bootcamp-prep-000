@@ -24,13 +24,15 @@ function viewCart() {
   else {  //return list of items in cart
     var allItems = [];  //define allItems array to but in item and price details from cart
     var cart = getCart(); 
-    for (let i = 0; i<cart.length; i++) {  //iterate through all cart array
+    for (let i = 0; i<cart.length - 1; i++) {  //iterate through all cart array
     var Name = cart[i].itemName;     //pull & save ith items name from cart
     var Price = cart[i].itemPrice;    //pull & save ith items price from cart
     allItems.push(`${Name} at $${Price}`); //push ith item name & price onto end of new array called allItems
   }
+  var lastitem = cart[cart.length].itemName;
+  var lastprice = cart[cart.length].itemPame;
   var allItemsMsg = allItems.join(', ') //combine all items in allItems array into 1 string.
-  return `In your cart, you have ${allItems}.` //return message about what is in cart.
+  return `In your cart, you have ${allItems}, and ${lastitem} at ${lastprice}.` //return message about what is in cart.
   }
 }
 
