@@ -21,6 +21,12 @@ function viewCart() {
   if (getCart().length === 0) {   
     return "Your shopping cart is empty.";     
   }
+  else if (cart.length === 1) {
+  var item = cart[cart.length].itemName;
+  var lastprice = cart[cart.length].itemPame;
+  var allItemsMsg = allItems.join(', ') //combine all items in allItems array into 1 string.
+  return `In your cart, you have ${allItems}, and ${lastitem} at ${lastprice}.` //return message about what is in cart.
+  }
   else {  //return list of items in cart
     var allItems = [];  //define allItems array to but in item and price details from cart
     var cart = getCart(); 
