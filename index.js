@@ -31,7 +31,6 @@ function viewCart() {
   //if shopping cart has more than 1 item.
   else {  //return list of items in cart
     var allItems = [];  //define allItems array to but in item and price details from cart
-    var cart = getCart(); 
     for (let i = 0; i<cart.length - 1; i++) {  //iterate through all cart array
     var Name = cart[i].itemName;     //pull & save ith items name from cart
     var Price = cart[i].itemPrice;    //pull & save ith items price from cart
