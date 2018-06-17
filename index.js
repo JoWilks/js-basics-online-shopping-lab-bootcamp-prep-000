@@ -63,7 +63,7 @@ function total() {
 function removeFromCart(item) {
   // removes the specified item from the cart
   var cart = getCart();
-  cart.find
+  cart.findIndex()
 }
 
 function placeOrder(cardNumber) {
