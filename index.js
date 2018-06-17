@@ -64,10 +64,9 @@ function total() {
 function removeFromCart(item) {
   //find the index of the item
   var cart = getCart();
-  var testIndex = cart.findIndex(x => x.itemName== item);
-  return testIndex;
+  var removeIndex = cart.findIndex(x => x.itemName== item);
   // removes the specified item from the cart
-  
+  cart.splice(removeIndex, 1);
 }
 
 function placeOrder(cardNumber) {
