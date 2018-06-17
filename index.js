@@ -22,7 +22,7 @@ function viewCart() {
     return "Your shopping cart is empty.";     
   }
   //if shopping cart has 1 item.
-  else if (cart.length === 1) {
+  else if (getCart().length === 1) {
   var cart = getCart();
   var oneItem = cart[0].itemName;
   var onePrice = cart[0].itemPrice;
