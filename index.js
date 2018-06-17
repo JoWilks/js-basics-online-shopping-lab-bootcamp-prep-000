@@ -27,7 +27,7 @@ function viewCart() {
     for (let i = 0; i<cart.length; i++) {  //iterate through all cart array
     itemName = cart[i].itemName;     //pull & save ith items name from cart
     itemPrice = cart[i].itemPrice;    //pull & save ith items price from cart
-    allItems.push(`${itemName} at $${itemPrice}`) //push ith item name & price onto end of new array called allItems
+    allItems.push(`${itemName} at $${itemPrice}`); //push ith item name & price onto end of new array called allItems
   }
   allItemsMsg = allItems.join(', ') //combine all items in allItems array into 1 string.
   return `In your cart, you have  ${allItems}.` //return message about what is in cart.
