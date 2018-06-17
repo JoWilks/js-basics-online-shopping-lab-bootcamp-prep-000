@@ -21,7 +21,10 @@ function viewCart() {
     return "Your shopping cart is empty";     //if shopping cart empty return "You shopping cart is empty."
   }
   else {
-  for (let i = 0; i<cart.length)
+  for (let i = 0; i<cart.length) {
+    return "blah"
+  }
+  }
 }
 
 function total() {
