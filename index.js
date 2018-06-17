@@ -64,7 +64,7 @@ function removeFromCart(item) {
   
   //find the index of the item
   var cart = getCart();
-  var indexItem = cart.findindex(item);
+  var indexItem = cart.findIndex(item);
   
   // removes the specified item from the cart
 }
