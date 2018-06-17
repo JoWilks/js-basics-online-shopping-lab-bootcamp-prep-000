@@ -56,7 +56,8 @@ function total() {
    var objPrice = ithObject["itemPrice"];
    allPrices.push(objPrice);
   }
- 
+  var sum = 0;
+  
 }
 
 function removeFromCart(item) {
