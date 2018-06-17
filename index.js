@@ -24,7 +24,7 @@ function viewCart() {
   else {  //return list of items in cart
     var allItems = [];  //define allItems array to but in item and price details from cart
     for (let i = 0; i<cart.length; i++) {  //iterate through all cart array
-    itemName = 0;     //pull & save ith items name from cart
+    itemName = getcart()[0];     //pull & save ith items name from cart
     itemPrice = 0;    //pull & save ith items price from cart
     allItems.push(`${itemName} at $${itemPrice}`) //push ith item name & price onto end of new array called allItems
   }
