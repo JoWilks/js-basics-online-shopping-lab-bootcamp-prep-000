@@ -18,12 +18,12 @@ function addToCart(item) {
 
 function viewCart() {
   //if shopping cart empty return "You shopping cart is empty."
-  if (getCart().length === 0) {   
+  var cart = getCart();
+  if (cart.length === 0) {   
     return "Your shopping cart is empty.";     
   }
   //if shopping cart has 1 item.
-  else if (getCart().length === 1) {
-  var cart = getCart();
+  else if (cart.length === 1) {
   var oneItem = cart[0].itemName;
   var onePrice = cart[0].itemPrice;
   return `In your cart, you have ${oneItem} at $${onePrice}.` //return message about what is in cart.
