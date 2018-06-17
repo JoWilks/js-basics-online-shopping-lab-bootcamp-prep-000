@@ -51,9 +51,14 @@ function total() {
  var cart= getcart();
 //iterate through cart to get all prices
 if (cart.length ===0 ) {
-  
+  price = 0;  
+  return price;
 }
- 
+else {
+  for(i=0;i<cart.length;i++) {
+   var objprice  
+  }
+}
  
 }
 
