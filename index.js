@@ -12,7 +12,7 @@ function setCart(c) {
 function addToCart(item) {
  var Price = Math.floor((Math.random() * 100) + 1);  //rand gen no between 1-100
  var itemObject = {itemName: item, itemPrice: Price};   //create an object with the item name and item price
- cart.push(itemObject);   //push item object into cart array
+ getcart().push(itemObject);   //push item object into cart array
  return `${item} has been added to your cart.`;  //return message saying "'item' has been added to cart"
 }
 
