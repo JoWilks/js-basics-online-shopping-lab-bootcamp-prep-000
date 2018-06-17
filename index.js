@@ -12,14 +12,14 @@ function setCart(c) {
 function addToCart(item) {
  var Price = Math.floor((Math.random() * 100) + 1);  //rand gen no between 1-100
  var itemObject = {itemName: item, itemPrice: Price};   //create an object with the item name and item price
- getcart().push(itemObject);   //push item object into cart array
+ getCart().push(itemObject);   //push item object into cart array
  return `${item} has been added to your cart.`;  //return message saying "'item' has been added to cart"
 }
 
 function viewCart() {
   //if shopping cart empty return "You shopping cart is empty."
   if (getCart().length === 0) {   
-    return "Your shopping cart is empty";     
+    return "Your shopping cart is empty.";     
   }
   else {  //return list of items in cart
     var allItems = [];  //define allItems array to but in item and price details from cart
